@@ -9,6 +9,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
@@ -21,7 +22,17 @@ public class ViewController  implements Initializable{
 	private ComboBox<Person> comboBoxPerson;
 	
 	@FXML
+	private Button btAll;
+	
+	@FXML
 	private ObservableList<Person> obsList;
+
+	@FXML
+	public void onBtAllAction() {
+		for(Person person : comboBoxPerson.getItems()) {
+			System.out.println(person);
+		}
+	}
 	
 	@FXML
 	public void onComboBoxPersonAction() {
