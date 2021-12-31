@@ -42,7 +42,8 @@ public class DepartmentListController implements Initializable{
 		// TODO Auto-generated method stub
 		tableColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));
 		tableColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
-		
+		/*comando para colocar a tableViewDepartment para poder acompanhar o tamanho da da janela
+		 * */
 		Stage stage =(Stage) Main.getMainScene().getWindow();
 		tableViewDepartment.prefHeightProperty().bind(stage.heightProperty());
 }
