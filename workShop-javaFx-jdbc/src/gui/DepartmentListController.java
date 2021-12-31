@@ -43,7 +43,8 @@ public class DepartmentListController implements Initializable{
 		tableColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));
 		tableColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
 		/*comando para colocar a tableViewDepartment para poder acompanhar o tamanho da da janela
-		 * */
+		 * usando o Stage 
+		 * a baixo ele coloca para se do tamanho da janela*/
 		Stage stage =(Stage) Main.getMainScene().getWindow();
 		tableViewDepartment.prefHeightProperty().bind(stage.heightProperty());
 }
